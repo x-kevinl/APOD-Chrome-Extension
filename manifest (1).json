@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "APOD New Tab Background",
+  "version": "1.0",
+  "description": "Sets the new tab background to today's Astronomy Picture of the Day (APOD).",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://apod.nasa.gov/*"
+  ]
+}
